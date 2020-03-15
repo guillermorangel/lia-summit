@@ -21,12 +21,12 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Updates</h2>
+										<h2>Sessions</h2>
 									</header>
 									<div class="mini-posts">
 										<?php 
 											$args = array(
-												'post_type' => 'my-custom-updates',
+												'post_type' => 'sessions',
 												'orderby' => 'menu_order',
 												'order' => 'ASC'
 											);
