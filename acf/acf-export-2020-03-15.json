@@ -1,0 +1,219 @@
+[
+    {
+        "key": "group_5e6e5e79aa837",
+        "title": "Session Fields",
+        "fields": [
+            {
+                "key": "field_5e6e6e144d8b3",
+                "label": "Session Timeline",
+                "name": "session_timeline",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "timeline-items"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 0,
+                "multiple": 0
+            },
+            {
+                "key": "field_5e6e69ae79bb2",
+                "label": "Session Location",
+                "name": "session_location",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e6e69cf4ca8c",
+                "label": "Sessions Speaker",
+                "name": "sessions_speaker",
+                "type": "page_link",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "speakers"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 0,
+                "multiple": 0
+            },
+            {
+                "key": "field_5e6e6285cecb4",
+                "label": "Session Presentation File",
+                "name": "session_presentation_file",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5e6e610ececb3",
+                "label": "Session Supplementary File Name",
+                "name": "session_supplementary_file_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e6e62f429dca",
+                "label": "Session Supplementary File",
+                "name": "session_supplementary_file",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5e6e6d7558e34",
+        "title": "Timeline Item Fields",
+        "fields": [
+            {
+                "key": "field_5e6e6d7cd1cce",
+                "label": "Timeline Order",
+                "name": "timeline_order",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5e6e6dd7e0a06",
+                "label": "Timeline Start Time",
+                "name": "timeline_start_time",
+                "type": "time_picker",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "g:i a",
+                "return_format": "g:i a"
+            },
+            {
+                "key": "field_5e6e6f226aca5",
+                "label": "Timeline End Time",
+                "name": "timeline_end_time",
+                "type": "time_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "g:i a",
+                "return_format": "g:i a"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "timeline-items"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
