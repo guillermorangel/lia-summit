@@ -152,5 +152,26 @@ function create_speakers() {
 	);
 }
 
+
+function create_timeline_items() {
+	register_post_type( 'timeline-items',
+		array(
+			'labels' => array(
+				'name' => __( 'Timeline Items' ),
+				'singular_name' => __( 'Timeline Item' )					
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'custom-fields'
+			)
+		)
+	);
+}
+
 add_action( 'init', 'create_sessions' );
 add_action( 'init', 'create_speakers' );
+add_action( 'init', 'create_timeline_items' );
