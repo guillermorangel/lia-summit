@@ -114,12 +114,12 @@ function custom_settings_page_setup() {
 
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
-function create_my_custom_updates() {
-	register_post_type( 'my-custom-updates',
+function create_sessions() {
+	register_post_type( 'sessions',
 		array(
 			'labels' => array(
-				'name' => __( 'Updates' ),
-				'singular_name' => __( 'Update' )					
+				'name' => __( 'Sessions' ),
+				'singular_name' => __( 'Session' )					
 			),
 		'public' => true,
 		'has_archive' => true,
@@ -133,4 +133,24 @@ function create_my_custom_updates() {
 	);
 }
 
-add_action( 'init', 'create_my_custom_updates' );
+function create_speakers() {
+	register_post_type( 'speakers',
+		array(
+			'labels' => array(
+				'name' => __( 'Speakers' ),
+				'singular_name' => __( 'Speaker' )					
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'custom-fields'
+			)
+		)
+	);
+}
+
+add_action( 'init', 'create_sessions' );
+add_action( 'init', 'create_speakers' );
